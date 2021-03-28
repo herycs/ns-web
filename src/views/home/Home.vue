@@ -12,7 +12,10 @@
       <tab-control class="tab-control"
                    :titles="['推荐', '娱乐', '热点']"
                    @tabClick="tabClick"/>
-      <user-bar></user-bar>
+      <article-bar></article-bar>
+      <article-bar></article-bar>
+      <article-bar></article-bar>
+      <article-bar></article-bar>
     </scroll>
     <back-top @click.native="backClick" v-show="isShowBackTop"/>
   </div>
@@ -23,7 +26,7 @@
   import TabControl from 'components/content/tabControl/TabControl'
   import Scroll from 'components/common/scroll/Scroll'
   import BackTop from 'components/content/backTop/BackTop'
-  import UserBar from './HomeChild/UserInfoBar'
+  import ArticleBar from 'components/content/articleBar/ArticleBar'
 
   import { getHomeMultidata } from "network/home"
 
@@ -34,7 +37,7 @@
       TabControl,
       Scroll,
       BackTop,
-      UserBar
+      ArticleBar
     },
     data() {
       return {
