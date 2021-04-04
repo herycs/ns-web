@@ -20,4 +20,4 @@
 
 5. mapactions、mapStates，用于将store中action和state传递到组件中，语法糖
 
-可以切到 gmc-dev 分支 commit  
+可以切到 add-vuex 分支 commit  
